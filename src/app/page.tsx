@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -6,6 +7,9 @@ export default function Home() {
       <h1 className="text-5xl font-bold">
         Next 13+
       </h1>
+      <Link href="/about">
+        <span className='text-2xl'>About Page</span>
+      </Link>
     </main>
   )
 }
